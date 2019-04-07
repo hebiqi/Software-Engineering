@@ -42,7 +42,7 @@
         <span><%=Phone %></span>
         <h4>有效日期：</h4>
         <span><%=Term %></span>
-        
+        <h4>发布日期：</h4>
         <span><%=FBDate %></span>
         <h4>备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注：</h4>
         <span><%=Content %></span>
