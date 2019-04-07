@@ -11,7 +11,7 @@
                 <asp:BoundField DataField="TruckLoad" HeaderText="载重" />
                 <asp:BoundField DataField="FBDate" DataFormatString="{0:yy-MM-dd}" HeaderText="发布日期"
                     HtmlEncode="False" />
-                <asp:TemplateField HeaderText="详细信息">
+               
                     <ItemTemplate>
                         <a href="truckInfo.aspx?ID=<%#Eval("ID")%>">详细信息</a>
                     </ItemTemplate>
