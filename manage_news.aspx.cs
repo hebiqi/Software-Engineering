@@ -2,7 +2,7 @@
 using System.Data;
 using System.Configuration;
 using System.Collections;
-
+using System.Web;
 using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -33,6 +33,6 @@ public partial class Manage_manage_news : System.Web.UI.Page
         {
             Page.RegisterStartupScript("false", "<script>alert('删除失败！')</script>");
         }
-     
+      bindNews();
     }
 }
