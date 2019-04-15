@@ -18,9 +18,9 @@ public partial class log : System.Web.UI.Page
     public static int loginType;
     protected void Page_Load(object sender, EventArgs e)
     {
-        pelBase.Visible = false;
-        pelQyInfo.Visible = false;
-        pelGrInfo.Visible = false;
+        pelBase.Visible = false;              //用户基本注册信息
+        pelQyInfo.Visible = false;            //企业用户注册详细信息
+        pelGrInfo.Visible = false;            //个人用户注册详细信息
 
     }
 
@@ -33,10 +33,10 @@ public partial class log : System.Web.UI.Page
     }
     protected void LinkButton2_Click(object sender, EventArgs e)
     {
-        loginType = 1;
-        pelBase.Visible = true;
-        pelQyInfo.Visible = false;
-        pelGrInfo.Visible = false;
+        loginType = 1;                  //记录注册方式是企业用户注册
+        pelBase.Visible = true;         //显示基本注册信息
+        pelQyInfo.Visible = false;      //不显示个人注册详细信息
+        pelGrInfo.Visible = false;      //不显示企业注册详细信息
     }
 
 
@@ -91,6 +91,8 @@ public partial class log : System.Web.UI.Page
 
         }
     }
+    
+    //企业注册完成后
     protected void btnQyLogin_Click(object sender, EventArgs e)
     {
         string linkman = this.txtLinkman.Text;
@@ -119,6 +121,7 @@ public partial class log : System.Web.UI.Page
         }
     }
 
+   //个人注册完成后
     protected void btnGrLogin_Click(object sender, EventArgs e)
     {
         string grLinkman = this.txtGrLinkman.Text;
