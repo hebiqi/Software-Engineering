@@ -42,7 +42,7 @@ public partial class log : System.Web.UI.Page
 
     public void bindEmail()
     {
-        string Subject = "欢迎登陆＊＊物流信息管理平台";
+        string Subject = "欢迎登陆物流信息管理平台";
         string Content = "您登陆物流信息管理平台帐号为：" + name + "密码为：" + pass;
         string Receiver = txtEmail.Text;
         string server = "Ls";
