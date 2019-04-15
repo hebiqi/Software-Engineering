@@ -14,10 +14,10 @@ public partial class _Default : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
-        bindFreight();       //自定义方法绑定货源信息
-        bindTruck();         //自定义方法绑定车源信息
-        bindSpecial();       //自定义方法绑定专线信息
-        bindDepot();         //自定义方法绑定仓储信息
+        bindFreight();        //自定义方法绑定货源信息
+        bindTruck();          //自定义方法绑定车源信息
+        bindSpecial();        //自定义方法绑定专线信息
+        bindDepot();          //自定义方法绑定仓储信息
     }
    
     //绑定货源
